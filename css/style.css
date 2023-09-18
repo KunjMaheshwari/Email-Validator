@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+    padding: 19px 12px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a{
+    color: white; 
+    text-decoration: none; /* removes the underline from the link */
+}
+
+ul >li >a:hover{
+    color: grey;
+}
+
+main {
+    min-height: 90vh;   /* Height between the navbar and the footer section. */
+    padding: 2px;
+}
+.container{
+    max-width: 80vw;  /*Maximum width of the form which is inside the container.*/
+    margin: auto;
+    padding: 15px;
+}
+
+.container h1{
+    padding: 12px 0;
+}
+input[type='text']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+/* In order to make website responsive we use Media query */
+@media only screen and (max-width: 600px){
+    body{
+        background-color: lightblue;
+    }
+
+    .container {
+        font-size: 12px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0px;
+    }
+}
